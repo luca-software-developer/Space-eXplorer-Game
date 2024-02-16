@@ -14,7 +14,7 @@ Future main() async {
 class SpaceXplorerApp extends StatelessWidget {
   const SpaceXplorerApp({super.key});
   static const appTitle = 'Space eXplorer';
-  static const primaryColor = Color(0x010b19ff);
+  static const appColor = Color.fromRGBO(1, 11, 25, 1);
   static const url = 'http://localhost:8080/assets/index.html';
 
   @override
@@ -23,8 +23,18 @@ class SpaceXplorerApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: appTitle,
       theme: ThemeData(
-        primaryColor: primaryColor,
-      ),
+          primarySwatch: MaterialColor(appColor.value, {
+        50: Color.fromRGBO(appColor.red, appColor.green, appColor.blue, .1),
+        100: Color.fromRGBO(appColor.red, appColor.green, appColor.blue, .2),
+        200: Color.fromRGBO(appColor.red, appColor.green, appColor.blue, .3),
+        300: Color.fromRGBO(appColor.red, appColor.green, appColor.blue, .4),
+        400: Color.fromRGBO(appColor.red, appColor.green, appColor.blue, .5),
+        500: Color.fromRGBO(appColor.red, appColor.green, appColor.blue, .6),
+        600: Color.fromRGBO(appColor.red, appColor.green, appColor.blue, .7),
+        700: Color.fromRGBO(appColor.red, appColor.green, appColor.blue, .8),
+        800: Color.fromRGBO(appColor.red, appColor.green, appColor.blue, .9),
+        900: Color.fromRGBO(appColor.red, appColor.green, appColor.blue, 1),
+      })),
       home: const SpaceXplorerGame(),
     );
   }

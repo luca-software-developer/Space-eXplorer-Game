@@ -2,9 +2,9 @@
     package="com.example.space_explorer">
     <application
         android:usesCleartextTraffic="true"
-        android:label="space_explorer"
+        android:label="Space eXplorer"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
             android:exported="true"

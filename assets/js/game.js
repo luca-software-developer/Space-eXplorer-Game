@@ -75,11 +75,11 @@ const ENEMYBULLET_INTERVAL = 1000;
 
 /* Score Constants */
 const SCORE_LABEL_POSITION_X = 30;
-const SCORE_LABEL_POSITION_Y = 30;
+const SCORE_LABEL_POSITION_Y = 50;
 const SCORE_BLINKS = 6;
 const SCORE_BLINK_INTERVAL = 500;
 const SCORE_POSITION_X = 30;
-const SCORE_POSITION_Y = 50;
+const SCORE_POSITION_Y = 70;
 const SCORE_LABEL_FONT = `12px "Arial"`;
 const SCORE_LABEL_COLOR = `#eeeeee`;
 const SCORE_LABEL_TEXTALIGN = `right`;
